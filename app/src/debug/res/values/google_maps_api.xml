@@ -1,0 +1,18 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=88:75:62:21:10:85:AF:F3:1A:9A:E8:9C:9E:2F:01:49:34:76:BB:69%3Bcom.sonam.gasstationlocator.locator
+
+    You can also add your credentials to an existing key, using this line:
+    88:75:62:21:10:85:AF:F3:1A:9A:E8:9C:9E:2F:01:49:34:76:BB:69;com.sonam.gasstationlocator.locator
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" translatable="false" templateMergeStrategy="preserve">
+        AIzaSyAWrELhvvpFBxadQACVMG26ngo6Nczpczc
+    </string>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation = "vertical">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+
+        android:layout_alignParentTop="true"
+        android:weightSum="1">
+
+        <Spinner
+            android:id="@+id/spinner_toolbar"
+            android:layout_width="53dp"
+            android:layout_height="38dp"
+            android:layout_centerHorizontal="true"
+            android:background="#AA66CC"
+            android:layout_weight="0.85" />
+
+
+        <TextView
+            android:id="@+id/Text_search"
+            android:layout_width="47dp"
+            android:layout_height="38dp"
+            android:background="@drawable/search"
+            android:layout_gravity="start|center_vertical"/>
+
+        <EditText
+            android:id="@+id/etsearch"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:hint="@string/hint"
+            android:ems="10"
+            android:singleLine="true"
+            android:maxLines="1"
+             />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:text="@string/search_btn"
+            android:background="#99CC00"
+            android:onClick="GasLocate"/>
+
+    </LinearLayout>
+
+    <fragment
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/map"
+    tools:context=".MapsActivity"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/linearLayout" />
+
+</RelativeLayout>

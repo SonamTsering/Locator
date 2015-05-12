@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:visible="true"
+        android:title="@string/action_settings"
+
+        />
+    <item
+        android:id="@+id/share"
+        android:orderInCategory="100"
+        android:visible="true"
+        android:title = "Share"
+
+        android:actionProviderClass="android.widget.ShareActionProvider"
+
+        />
+    <item
+        android:id="@+id/help"
+        android:orderInCategory="100"
+        android:visible="true"
+        android:title="Help"/>
+    <item
+        android:id="@+id/currentlocation"
+        android:orderInCategory="100"
+        android:visible="true"
+        android:title="CurrentLocation"/>
+
+
+
+
+
+</menu>
