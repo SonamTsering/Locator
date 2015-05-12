@@ -240,6 +240,7 @@ public class MapsActivity extends FragmentActivity implements OnMapLongClickList
                 Log.e(TAG, "places : " + placeDetail.getName());
             }
             return findPlaces;
+
         }
     }
 
